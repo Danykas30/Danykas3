@@ -97,25 +97,6 @@ footer {
     background-color: #0d47a1;
     border-radius: 10px; /* Rounded footer */
 }
-/* Initial hidden state */
-.hidden {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* Visible state */
-.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* Initial state (text starts lower) */
-.hidden-up {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
 /* Moves text up when scrolling down */
 .animate-up {
   opacity: 1;
