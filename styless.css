@@ -115,5 +115,9 @@ footer {
   opacity: 0;
   transform: translateY(-50px);
 }
-
+#my{
+zoom: 90%;
+}
+-moz-transform: scale(0.9);
+}
 
