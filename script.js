@@ -1,5 +1,5 @@
  document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, img, button");
+  const elements = document.querySelectorAll("li, p, h1, h2, h3, h4, h5, h6, img, button");
 
   // Add the 'hidden' class to all elements initially
   elements.forEach(el => el.classList.add("hidden"));
@@ -19,4 +19,5 @@
 
   // Observe all elements
   elements.forEach(el => observer.observe(el));
+  document.body.style.zoom="90%"
 });
