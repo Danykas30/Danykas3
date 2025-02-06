@@ -20,5 +20,26 @@
   // Observe all elements
   elements.forEach(el => observer.observe(el));
   document.body.style.zoom="90%"
+document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll(".animated");
 
+    function handleScroll() {
+        animatedElements.forEach((element) => {
+            const rect = element.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top < 50) {
+                // If element is almost out of view, move it up
+                element.classList.add("fly-up");
+                element.classList.remove("fly-down");
+            } else {
+                // If scrolling back, bring it back to position
+                element.classList.remove("fly-up");
+                element.classList.add("fly-down");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+});
  });
