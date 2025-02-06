@@ -120,5 +120,43 @@ zoom: 90%;
 }
 -moz-transform: scale(0.9);
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Hide elements initially */
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* When elements are about to leave the screen */
+.fly-up {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+/* When elements come back */
+.fly-down {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
