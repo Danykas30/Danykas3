@@ -15,7 +15,7 @@
         entry.target.classList.remove("in-view");
       }
     });
-  }, { threshold: 0.2 }); // Trigger when 20% of element is visible
+  }, { threshold: 0.4 }); // Trigger when 20% of element is visible
 
   // Observe all elements
   elements.forEach(el => observer.observe(el));
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const rect = element.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
-            if (rect.top < 60) {
+            if (rect.top < 70) {
                 // If element is almost out of view, move it up
                 element.classList.add("fly-up");
                 element.classList.remove("fly-down");
