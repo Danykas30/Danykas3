@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const rect = element.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
-            if (rect.top < 50) {
+            if (rect.top < 60) {
                 // If element is almost out of view, move it up
                 element.classList.add("fly-up");
                 element.classList.remove("fly-down");
