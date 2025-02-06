@@ -15,7 +15,7 @@
         entry.target.classList.remove("in-view");
       }
     });
-  }, { threshold: 0.4 }); // Trigger when 20% of element is visible
+  }, { threshold: 0.8 }); // Trigger when 20% of element is visible
 
   // Observe all elements
   elements.forEach(el => observer.observe(el));
