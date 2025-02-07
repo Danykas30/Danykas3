@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Danykas30/vyciotv  # Replace with your actual GitHub repo
   branch: main
 
 media_folder: "assets/uploads"
@@ -13,4 +14,4 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
