@@ -38,13 +38,3 @@ document.addEventListener("DOMContentLoaded", function () {
                 element.classList.add("fly-down");
             }
         });
-    }
-
-    window.addEventListener("scroll", handleScroll);
-  function () { function () {
-  if (window.innerWidth < 600) {
-    document.body.style.zoom = "100%";
-  } else {
-    document.body.style.zoom = "90%";
-});
- });
