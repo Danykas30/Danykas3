@@ -9,27 +9,6 @@
     <link rel="icon" href="Cropped_Image.png" type="image/x-icon type">
     <link rel="stylesheet" href="styless.css">
     <script src="script.js"></script>
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-     <textarea id="mytextarea"></textarea>
-    <script>
-  tinymce.init({
-    selector: '#mytextarea', // Apply TinyMCE to the textarea with this ID
-    plugins: 'advlist autolink lists link image charmap print preview anchor',
-    toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | code'
-  });
-</script>
-<form action="submit.php" method="post">
-  <textarea id="mytextarea" name="content"></textarea>
-  <input type="submit" value="Submit">
-</form>
-
-<script>
-  document.querySelector('form').onsubmit = function() {
-    // This gets the content from TinyMCE and updates the form field
-    document.querySelector('textarea[name="content"]').value = tinymce.get('mytextarea').getContent();
-  };
-</script>
-</head>
 <body>
     <header>
         <div class="logo">
