@@ -1,0 +1,4 @@
+"dependencies": {
+   "@tinacms/cli": "^1.0.0",
+   "tinacms": "^1.0.0"
+}
