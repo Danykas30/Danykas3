@@ -1,8 +1,4 @@
- document.addEventListener("DOMContentLoaded", function () { function () {
-  if (window.innerWidth < 600) {
-    document.body.style.zoom = "100%";
-  } else {
-    document.body.style.zoom = "90%";
+ document.addEventListener("DOMContentLoaded",
   const elements = document.querySelectorAll("ul li, p, h1, h2, h3, h4, h5, h6, img, button");
 
   // Add the 'hidden' class to all elements initially
