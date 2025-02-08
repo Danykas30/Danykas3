@@ -19,20 +19,21 @@
 
   // Observe all elements
   elements.forEach(el => observer.observe(el));
-});
 document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll('nav ul li a');
-
-    links.forEach(link => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
-
-            window.scrollTo({
-                top: targetSection.offsetTop - 999, // Adjust if you have a fixed navbar
-                behavior: "smooth"
-            });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                entry.target.classList.add("fly-up"); // Fly out when leaving viewport
+                entry.target.classList.remove("fly-back");
+            } else {
+                entry.target.classList.remove("fly-up"); // Fly back when scrolling up
+                entry.target.classList.add("fly-back");
+            }
         });
+    }, { threshold: 0.2 }); // Triggers when 20% of the element is visible
+
+    // Observe all elements inside sections
+    document.querySelectorAll("section > *").forEach(element => {
+        observer.observe(element);
     });
 });
