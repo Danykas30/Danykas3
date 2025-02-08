@@ -102,3 +102,42 @@ zoom: 90%;
 }
 -moz-transform: scale(0.9);
 }                             /* here will be changes so every failed css will be deleted to this point */
+body {
+    font-family: "Century Gothic";
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Initial hidden state for animation */
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* When in view, reset to normal */
+.animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Leaving view, animate flying away */
+.animate.out-of-view-up {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+.animate.out-of-view-down {
+    transform: translateY(100px);
+    opacity: 0;
+}
