@@ -120,3 +120,22 @@ zoom: 90%;
 }
 -moz-transform: scale(0.9);
 }
+/* Initial state: Below the viewport */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When element becomes visible (flies up) */
+.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* When element leaves the viewport (flies out) */
+.out-of-view {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
