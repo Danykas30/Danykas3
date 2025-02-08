@@ -1,5 +1,5 @@
         document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll("li p, h1, h2, h3, h4, h5, h6, img, button ul section div footer");
+  const elements = document.querySelectorAll("li p, h1, h2, h3, h4, h5, h6, img, button ul section div footer li article");
 
   // Add the 'hidden' class to all elements initially
   elements.forEach(el => el.classList.add("hidden"));
