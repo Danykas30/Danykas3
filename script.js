@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("in-view");  // Element flies in
-            } else {
-                entry.target.classList.remove("in-view"); // Element flies out
-            }
-        });
-    }, { threshold: 0.2 }); // Triggers when 20% of the element is visible
+  const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, ul, li, img, button");
 
-    // Observe all elements (no need for specific classes or IDs)
-    document.querySelectorAll("*").forEach(element => {
-        observer.observe(element);
+  const revealOnScroll = () => {
+    elements.forEach((el) => {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.85) {
+        el.style.opacity = 1;
+        el.style.transform = "translateY(0)";
+      }
     });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll(); // Run on page load
 });
+
