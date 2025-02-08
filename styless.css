@@ -119,5 +119,16 @@ footer {
 zoom: 90%;
 }
 -moz-transform: scale(0.9);
+}                             /* here will be changes so every failed css will be deleted to this point */
+/* Initial state: move everything down slightly and fade it */
+* {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
+/* When in view, elements fly into their position */
+.in-view {
+    opacity: 1;
+    transform: translateY(0px);
+}
