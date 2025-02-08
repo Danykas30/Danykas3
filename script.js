@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
 
             window.scrollTo({
-                top: targetSection.offsetTop - 50, // Adjust if you have a fixed navbar
+                top: targetSection.offsetTop - 0, // Adjust if you have a fixed navbar
                 behavior: "smooth"
             });
         });
