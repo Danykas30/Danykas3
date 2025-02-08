@@ -1,1 +1,0 @@
-npx tinacms init
