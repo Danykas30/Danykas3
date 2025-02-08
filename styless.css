@@ -173,13 +173,22 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
 }
+/* Initially hide elements */
+section > * {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
 
-section {
-    height: 100vh; /* Each section takes full screen height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    border-bottom: 2px solid #ddd;
+/* Add class to make elements fly up */
+.fly-up {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+/* Add class to bring them back when scrolling up */
+.fly-back {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
