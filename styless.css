@@ -120,21 +120,3 @@ zoom: 90%;
 }
 -moz-transform: scale(0.9);
 }
-@media (max-width: 600px) {
-  /* Styles for mobile devices */
-  body {
-    font-size: 16px;
-  }
-  .container {
-    padding: 10px;
-  }
-}
-@media (min-width: 601px) {
-  /* Styles for larger devices */
-  body {
-    font-size: 18px;
-  }
-  .container {
-    padding: 20px;
-  }
-}
