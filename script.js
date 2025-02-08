@@ -1,5 +1,3 @@
-        document.addEventListener("DOMContentLoaded", function () {
-  const elements.forEach(el => observer.observe(el));
 document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
