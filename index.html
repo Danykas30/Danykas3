@@ -9,42 +9,6 @@
     <link rel="icon" href="Cropped_Image.png" type="image/x-icon type">
     <link rel="stylesheet" href="styless.css">
     <script src="script.js"></script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            height: 200vh; /* Just to enable scrolling */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 50px;
-        }
-
-        div {
-            width: 200px;
-            height: 200px;
-            background: linear-gradient(45deg, red, blue);
-            border-radius: 20px;
-        }
-    </style>
-     <script>
-        let scrollSpeed = 0.1; // Adjust speed (lower = smoother)
-        
-        let lastScrollTop = window.scrollY;
-
-        function smoothScroll() {
-            let currentScroll = window.scrollY;
-            let diff = currentScroll - lastScrollTop;
-            window.scrollBy(0, diff * scrollSpeed);
-            lastScrollTop = currentScroll;
-            requestAnimationFrame(smoothScroll);
-        }
-
-        smoothScroll(); // Start animation
-    </script>
 <body>
     <header>
         <div class="logo">
