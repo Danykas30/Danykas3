@@ -101,13 +101,6 @@ zoom: 90%;
 }
 -moz-transform: scale(0.9);
 }                             /* here will be changes so every failed css will be deleted to this point */
-body {
-    font-family: "Century Gothic";
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
 /* Initial hidden state for animation */
 .animate {
     opacity: 0;
