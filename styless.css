@@ -201,3 +201,62 @@ button {
     height: 200px; /* Adjust as needed */
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+  display: none; /* Hidden by default */
+  text-align: center;
+}
+
+.menu-link {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%; /* Makes the button a circle */
+  width: 60px;
+  height: 60px;
+  line-height: 60px; /* Centers the text vertically */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+  background-color: #444;
+}
+
+.menu.active {
+  display: block;
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: 200px; /* Adjust as needed */
+  }
+}
