@@ -25,3 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element); // Observe each element
     });
 });
+document.getElementById("toggleButton").addEventListener("click", function() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("active");
+});
