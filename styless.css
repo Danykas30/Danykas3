@@ -221,3 +221,29 @@ button {
     height: 200px; /* Adjust as needed */
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* News section */
+.news {
+  background-image: url('coffee-1869772_1280.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: white; /* White text for contrast */
+}
+
+.news h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.news p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
