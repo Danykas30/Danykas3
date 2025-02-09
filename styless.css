@@ -141,3 +141,11 @@ body {
     transform: translateY(100px);
     opacity: 0;
 }         /* changed here */
+section {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 20px;
+} /* again here */
