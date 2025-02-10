@@ -141,3 +141,9 @@ body {
     transform: translateY(100px);
     opacity: 0;
 }         /* changed here */
+}
+#my{
+zoom: 90%;
+}
+-moz-transform: scale(0.9);
+}
