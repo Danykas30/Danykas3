@@ -142,7 +142,7 @@ body {
     opacity: 0;
 }         /* changed here */
 section {
-    height: 100vh; /* Full screen height */
+    height: 50vh; /* Full screen height */
     display: flex;
     justify-content: left;
     align-items: left;
