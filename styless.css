@@ -9,6 +9,7 @@ body {
 
 /* Antraštė */
 header {
+    font-family: "Century Gothic";
     background-color: #0d47a1;
     padding: 20px;
     display: flex;
@@ -21,6 +22,7 @@ header .logo h1 {
     margin: 0;
 }
 nav ul {
+    font-family: "Century Gothic";
     list-style: none;
     padding: 0;
     display: flex;
@@ -32,6 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: "Century Gothic";
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
@@ -45,12 +48,14 @@ nav ul li a:hover {
 
 /* Pagrindinis turinys */
 main {
+    font-family: "Century Gothic";
     padding: 20px;
     border-radius: 15px; /* Rounded main content */
     background-color: #1e88e5;
 }
 
 section {
+    font-family: "Century Gothic";
     margin-bottom: 40px;
     border-radius: 10px; /* Rounded sections */
     background-color: #3949ab;
@@ -58,11 +63,13 @@ section {
 }
 
 h2 {
+    font-family: "Century Gothic";
     color: #90caf9;
 }
 
 /* Straipsniai */
 article {
+    font-family: "Century Gothic";
     background-color: #283593;
     padding: 15px;
     margin-bottom: 20px;
@@ -70,12 +77,14 @@ article {
 }
 
 .comments {
+    font-family: "Century Gothic";
     list-style: none;
     padding: 0;
     margin-top: 10px;
 }
 
 .comments li {
+    font-family: "Century Gothic";
     background-color: #1a237e;
     padding: 10px;
     margin-bottom: 5px;
@@ -84,6 +93,7 @@ article {
 
 /* Pagalba */
 a {
+    font-family: "Century Gothic";
     color: #90caf9;
     text-decoration: none;
     border-radius: 5px; /* Rounded links */
@@ -91,6 +101,7 @@ a {
 }
 
 footer {
+    font-family: "Century Gothic";
     text-align: center;
     padding: 10px;
     background-color: #0d47a1;
@@ -116,7 +127,7 @@ body {
     font-family: "Century Gothic";
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 /* Initial hidden state for animation */     /* here*/
 .animate {
