@@ -1,4 +1,4 @@
-/* Bendras stilius */
+ /* Bendras stilius */
 body {
     font-family: "Century Gothic"; /* Updated font */
     margin: 0;
@@ -10,7 +10,7 @@ body {
 /* Antraštė */
 header {
     font-family: "Century Gothic";
-    background-color: #0d47a1;
+    background-color: #1e88e5;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ main {
     font-family: "Century Gothic";
     padding: 20px;
     border-radius: 15px; /* Rounded main content */
-    background-color: #1e88e5;
+    background-color: #0d47a1;
 }
 
 section {
