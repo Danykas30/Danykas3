@@ -101,7 +101,7 @@ zoom: 90%;
 }
 -moz-transform: scale(0.9);
 }                             /* here will be changes so every failed css will be deleted to this point */
-.outlined-text {
+.outlinedtext {
   font-size: 16px;
   color: white; /* Text color */
   text-shadow: 
