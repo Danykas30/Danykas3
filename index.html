@@ -77,16 +77,14 @@
     <form action="submit_comment.php" method="POST">
         <input type="text" name="username" placeholder="Your Name" required><br>
         <textarea name="comment" placeholder="Your Comment" required></textarea><br>
-        <button type="submit">Submit</button>
+        <button type="submit">Paskelbti</button>
     </form>
 
-    <h2>Comments:</h2>
-    <?php
-    $result = $conn->query("SELECT * FROM comments ORDER BY created_at DESC");
-    while ($row = $result->fetch_assoc()) {
-        echo "<p><strong>" . htmlspecialchars($row['username']) . ":</strong> " . htmlspecialchars($row['comment']) . " <em>(" . $row['created_at'] . ")</em></p>";
-    }
-    ?>
+    <h2>Komentarai:</h2>
+    <?php while ($row = $result->fetch_assoc()): ?>
+        <p><strong><?php echo htmlspecialchars($row['username']); ?>:</strong> 
+        <?php echo htmlspecialchars($row['comment']); ?> <em>(<?php echo $row['created_at']; ?>)</em></p>
+    <?php endwhile; ?>
                 </ul>
             </article>
         </section>
