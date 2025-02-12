@@ -71,30 +71,7 @@
                 <p>Vyksta logotipu rinkimai laimėtojas yra numeris #4</p>
                 <p>Komentarai:</p>
                 <ul class="comments">
-                    <li>Puikus Logotipas - Adomas</li> 
-                    
-<h2>Palikite komentarą</h2>
-    <form action="submit_comment.php" method="POST">
-        <input type="text" name="username" placeholder="Your Name" required><br>
-        <textarea name="comment" placeholder="Your Comment" required></textarea><br>
-        <button type="submit">Paskelbti</button>
-    </form>
-
-    <h2>Komentarai:</h2>
-   <!-- Display comments from database -->
-    <?php 
-    include 'config.php'; // Ensure you have a database connection in config.php
-
-    $result = $conn->query("SELECT * FROM comments ORDER BY created_at DESC");
-    
-    while ($row = $result->fetch_assoc()): ?>
-        <div class="comment-box">
-            <p><strong><?php echo htmlspecialchars($row['username']); ?>:</strong></p>
-            <p><?php echo htmlspecialchars($row['comment']); ?></p>
-            <small><?php echo $row['created_at']; ?></small>
-        </div>
-    <?php endwhile; ?>
-                </ul>
+                    <li>Puikus Logotipas - Adomas</li>
             </article>
         </section>
 
