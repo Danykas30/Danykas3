@@ -1,3 +1,5 @@
+<?php include 'config.php'; ?>
+
 <!DOCTYPE html>
 <html lang="lt">
 <head>
@@ -71,6 +73,21 @@
                 <p>Komentarai:</p>
                 <ul class="comments">
                     <li>Puikus Logotipas - Adomas</li> 
+                    
+<h2>Palikite komentarą</h2>
+    <form action="submit_comment.php" method="POST">
+        <input type="text" name="username" placeholder="Your Name" required><br>
+        <textarea name="comment" placeholder="Your Comment" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Comments:</h2>
+    <?php
+    $result = $conn->query("SELECT * FROM comments ORDER BY created_at DESC");
+    while ($row = $result->fetch_assoc()) {
+        echo "<p><strong>" . htmlspecialchars($row['username']) . ":</strong> " . htmlspecialchars($row['comment']) . " <em>(" . $row['created_at'] . ")</em></p>";
+    }
+    ?>
                 </ul>
             </article>
         </section>
@@ -231,7 +248,7 @@
 
 <style>
     section {
-        font-family: Arial, sans-serif;
+        font-family: "Century gothic";
         padding: 20px;
         background-color: #382b82;
         border-radius: 10px;
