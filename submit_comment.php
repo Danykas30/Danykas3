@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include 'config.php'; // Connect to database
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars($_POST['username']);
@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-header("Location: index.html");
+header("Location: index.html"); // Redirect back to the main page
 exit();
 ?>
+
