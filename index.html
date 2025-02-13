@@ -32,6 +32,12 @@
                 <li><a href="#support">Pagalba</a></li>
                 <li><a href="#programa">Programa</a></li>
             </ul>
+         <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Pasirinkti svetainę</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <a href="#https://alfredotv90.netlify.app/">Alfredo tv</a>
+                <a href="#https://www.youtube.com/@Dbgtv-v9s">Youtube Kanalas</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -263,5 +269,11 @@
     <footer>
         <p>&copy; 2025 Vyčio TV. Visos teisės saugomos.</p>
     </footer>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("show");
+        }
+    </script>
 </body>
 </html><!-- google-site-verification: google2dbe5e0f64438fda.html -->
